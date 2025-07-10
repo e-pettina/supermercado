@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'productos/estilos.css' %}">
+    <title>Crear Producto</title>
+</head>
+<body>
+    <h1>Nuevo Producto</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" name="accion" value="guardar">Guardar</button>
+        <button type="submit" name="accion" value="guardar_y_nuevo">Guardar y cargar otro</button>
+    </form>
+    <a href="{% url 'lista_productos' %}">Volver a la lista</a>
+</body>
+</html>

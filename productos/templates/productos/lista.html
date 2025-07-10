@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Productos</title>
+</head>
+<body>
+    <h1>Productos</h1>
+    <ul>
+        {% for producto in productos %}
+            <li>{{ producto.nombre }} - ${{ producto.precio }}</li>
+        {% empty %}
+            <li>No hay productos cargados.</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'cargar_producto' %}">Cargar nuevo producto</a>
+</body>
+</html>
