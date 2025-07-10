@@ -1,0 +1,64 @@
+# Entornos virtuales
+venv/
+env/
+.venv/
+.env/
+
+# Archivos de Python compilados
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos temporales
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+*.tmp
+*.bak
+
+# Archivos de configuraciones de editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Archivos de configuración de entorno
+*.env
+
+# Archivos generados por Django
+staticfiles/
+media/
+*.mo
+
+# Archivos de migraciones
+*/migrations/__pycache__/
+*/migrations/*.pyc
+*/migrations/*.pyo
+
+# Archivos específicos del sistema operativo
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# Archivos de coverage y test
+.coverage
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Carpeta de node o frontend si se usa
+node_modules/
+
+# Archivos de compilación si usás SASS/SCSS o similares
+*.css.map
+*.js.map
